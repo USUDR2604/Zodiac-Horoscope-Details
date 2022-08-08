@@ -1,0 +1,266 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Gemini Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Gemini_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Gemini Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MythologyDetails">Mythology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#PopularCulture">Popular Culture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">{{Gemini_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Gemini Sign</h4>
+                <p>Gemini (♊︎) (/ˈdʒɛmɪnaɪ/ JEM-in-eye, Latin for "twins") is the third astrological sign in the
+                    zodiac. Under the tropical zodiac, the sun transits this sign between about May 21 to June 21.
+                    Under the sidereal zodiac, the sun transits this sign from about June 16 to July 16. Gemini is
+                    represented by the twins, Castor and Pollux, known as the Dioscuri in Greek mythology. It is a
+                    positive, mutable sign. Gemini is associated with the Yang polarity (masculine) in the Yin Yang
+                    ancient Chinese concept.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Gemini Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="MythologyDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Gemini Sign</h4>
+                <p>In Babylonian astronomy, the stars Pollux and Castor were known as the Great Twins. Their names were
+                    Lugal-irra and Meslamta-ea, meaning "The Mighty King" and "The One who has arisen from the
+                    Underworld". Both names are titles of Nergal, a major Babylonian god of plague and pestilence, who
+                    was king of the underworld.</p>
+                <p> In Greek mythology, Gemini is associated with the myth of Castor and Pollux. Pollux was the son of
+                    Zeus, who seduced Leda, while Castor was the son of Tyndareus, the king of Sparta and Leda's
+                    husband. When Castor died, because he was a mortal, Pollux begged his father Zeus to give Castor
+                    immortality, which was done through uniting them together in the heavens.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Gemini Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="PopularCulture" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Gemini Sign</h4>
+                <p>Sage the Gemini, born Dominic Wynn Woods, took his stage name from his zodiac sign Gemini and the
+                    color of his eyes.</p>
+                <p> NASA named its two-person space capsule Project Gemini after the zodiac sign because the spacecraft
+                    could carry two astronauts.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Gemini Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Gemini Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Twins</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>May 21 – June 21 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Gemini</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Air</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Mutable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td> Mercury</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Jupiter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>North Node</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>South Node</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Gemini Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Gemini.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Gemini Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;May 21 – June 21</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Gemini Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini
+                                    Basic Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini
+                                    Love Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

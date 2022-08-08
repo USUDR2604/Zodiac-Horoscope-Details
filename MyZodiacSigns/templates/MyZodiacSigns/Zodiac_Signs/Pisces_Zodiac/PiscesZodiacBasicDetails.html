@@ -1,0 +1,410 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Pisces Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Pisces_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Pisces Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#BackgroundDetails">Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MythologyDetails">Mythology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#InArtsDetails">In the Arts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#PopularCultureDetails">Popular Culture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">{{Pisces_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Pisces Sign</h4>
+                <p>Pisces (♓︎) (/ˈpaɪsiːz/; Ancient Greek: Ἰχθύες Ikhthyes) is the twelfth and final astrological sign
+                    in the zodiac. It is a negative, mutable sign. It spans 330° to 360° of celestial longitude. Under
+                    the tropical zodiac, the sun transits this area between February 19 and March 20. In classical
+                    interpretations, the symbol of the fish is derived from the ichthyocentaurs, who aided Aphrodite
+                    when she was born from the sea.</p>
+                <p>According to some tropical astrologers, the current astrological age is the Age of Pisces, while
+                    others maintain that currently it is the Age of Aquarius.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="BackgroundDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Pisces Sign</h4>
+                <p>While the astrological sign Pisces per definition runs from ecliptic longitude 330° to 0°, this
+                    position is now mostly covered by the constellation of Aquarius due to the precession from when the
+                    constellation and the sign coincided. Today, the First Point of Aries, or the vernal equinox, is in
+                    the Pisces constellation. There are no prominent stars in the constellation, with the
+                    brightest stars being of only fourth magnitude. One star in the constellation, Alpha Piscium, is
+                    also known as Alrescha, which comes from the Arabic الرشآء al-rišā’, meaning "the well rope," or
+                    "the cord." The constellation, however, is different from the astronomical location in where the
+                    sign occupies space. The constellations in earlier times were primarily used as markers to help
+                    determine what influence was in the sky. Nevertheless, the sign of Pisces remain in the 30 degree
+                    span of 330°-0°.</p>
+                <p>Ptolemy described Alpha Piscium as the point where the cords joining the two fish are knotted
+                    together. The astrological symbol shows the two fishes captured by a string,
+                    typically by the mouth or the tails. The fish are usually portrayed swimming in opposite
+                    directions; this represents the duality within the Piscean nature. They are ruled by the planet
+                    Neptune. Although they appear as a pair, the name of the sign in all languages originally
+                    referred to only one fish with the exception of Greek, Romanian, Bulgarian, Dutch, Hungarian,
+                    Latvian, Lithuanian and Italian. Pisces are the mutable water sign of the zodiac.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="MythologyDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Pisces Sign</h4>
+                <p>Divine associations with Pisces include Poseidon/Neptune, Aphrodite, Eros, Typhon, Vishnu and the
+                    Sumerian goddess Inanna.</p>
+                <h4>In early mythology</h4>
+                <p>"Pisces" is the Latin word for "Fishes." It is one of the earliest zodiac signs on record, with
+                    the two fish appearing as far back as c. 2300 BC on an Egyptian coffin lid.
+                    According to one Greek myth, Pisces represents the fish, sometimes represented by a shark, into
+                    which Aphrodite (also considered Venus) and her son Eros (also considered Cupid) transformed
+                    in order to escape the monster Typhon. Typhon, the "father of all monsters," had been
+                    sent by Gaia to attack the gods, which led Pan to warn the others before himself changing into a
+                    goat-fish and jumping into the Euphrates. A similar myth, one in which the fish "Pisces" carry
+                    Aphrodite and her son out of danger, is resounded in Manilius' five volume poetic work Astronomica:
+                    "Venus ow'd her safety to their Shape." Another myth is that an egg fell into the Euphrates
+                    river. It was then rolled to the shore by fish. Doves sat on the egg until it hatched, out from
+                    which came Aphrodite. As a sign of gratitude towards the fish, Aphrodite put the fish into the night
+                    sky. Because of these myths, the Pisces constellation was also known as "Venus et Cupido," "Venus
+                    Syria cum Cupidine," "Venus cum Adone," "Dione" and "Veneris Mater," the latter being the formal
+                    Latin term for mother.</p>
+                <p>The Greek myth on the origin of the sign of Pisces has been cited by English astrologer Richard
+                    James Morrison as an example of the fables that arose from the original astrological doctrine, and
+                    that the "original intent of was afterwards corrupted both by poets and priests."</p>
+                <p>In modern mythology and religion
+                    Purim, a Jewish holiday, falls at the full moon preceding the Passover, which was set by the full
+                    moon in Aries, which follows Pisces. The story of the birth of Christ is said to be a result of the
+                    spring equinox entering into the Pisces, as the Savior of the World appeared as the Fisher of Men.
+                    This parallels the entering into the Age of Pisces.</p>
+                <h4>Astrological age</h4>
+                <p>Early Christian inscription ichthys carved with Greek letters into marble in the ancient Greek ruins
+                    of Ephesus, Turkey.</p>
+                <h5>See also: Astrological age</h5>
+                <p>An astrological age is a time period in astrology that parallels major changes in the development of
+                    Earth's inhabitants, particularly relating to culture, society and politics, and there are twelve
+                    astrological ages corresponding to the twelve zodiacal signs. Astrological ages occur because of a
+                    phenomenon known as the precession of the equinoxes, and one complete period of this precession is
+                    called a Great Year or Platonic Year of about 25,920 years.</p>
+                <p>The age of Pisces began c. AD 1 and will end c. AD 2150. With the story of the birth of Christ
+                    coinciding with this date, many Christian symbols for Christ use the astrological symbol for
+                    Pisces, the fishes. The figure Christ himself bears many of the temperaments and personality
+                    traits of a Pisces, and is thus considered an archetype of the Piscean. Moreover, the twelve
+                    apostles were called the "fishers of men," early Christians called themselves "little fishes," and a
+                    code word for Jesus was the Greek word for fish, "Ikhthus." With this, the start of the age, or the
+                    "Great Month of Pisces," is regarded as the beginning of the Christian religion. Saint Peter is
+                    recognized as the apostle of the Piscean sign.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="InArtsDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Pisces Sign</h4>
+                <p>Venus exalted in Pisces is representative of divine love in the first canto of Dante's Purgatorio.
+                    Pisces is the subject of Luca Della Robbia's 15th century Plate with the Month of February. They
+                    are also the subject of one of Elizabeth Barrett Browning's poetic works:</p>
+                <q>And here fantastic fishes duskly float,<br>
+                    Using the calm for waters, while their fires<br>
+                    Throb out quick rhythms along the shallow air.<br><q>
+                        <p> — Elizabeth Barrett Browning, A Drama of Exile</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces
+                                    Basic
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces
+                                    Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces
+                                    Love
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces
+                                    Retail
+                                    Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+            </div>
+            <div id="PopularCultureDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Pisces Sign</h4>
+                <p>In the January 1970 edition of the Avengers, the supervillain group Zodiac introduced the
+                    member "Pisces" whose abilities allowed him to live underwater, which included fins, scales and
+                    gills.</p>
+                <p>In the 1979 sports fantasy film The Fish That Saved Pittsburgh, the fictitious basketball team the
+                    "Pittsburgh Pythons" turn to astrology after a continuous losing streak, and fill the roster with
+                    players born under the astrological sign of Pisces. They are reborn as the "Pittsburgh Pisces" and
+                    enter into a championship.</p>
+                <p> Nirvana's song "Heart-Shaped Box" from their 1993 album In Utero begins with lead singer Kurt Cobain
+                    singing "She eyes me like a Pisces when I am weak...."</p>
+                <p>In 1994 The Smashing Pumpkins released Pisces Iscariot, an album of B-sides. The album has gone
+                    platinum in the United States and contained a cover of the Fleetwood Mac song Landslide, which
+                    reached #30 on the billboard charts.</p>
+                <p>The Ukrainian metal band Jinjer released a song named "Pisces" on their 2016 album "King Of
+                    Everything".</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Pisces Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Two Fish</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>February 18 – March 20 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Pisces</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td>Water</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Mutable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td>Jupiter (traditional), Neptune (modern)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Mercury in traditional, Pluto in modern</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>venus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Mercury</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Pisces.png">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Pisces Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;February 18 – March 20</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Pisces Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces
+                                    Basic Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces
+                                    Love Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

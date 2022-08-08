@@ -1,0 +1,249 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Virgo Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Virgo_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Virgo Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OriginDetails">Origin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:VirgoZodiacOverview' %}">{{Virgo_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Virgo Sign</h4>
+                <p>Virgo (♍︎) (Greek: Παρθένος, Parthenos) is the sixth astrological sign in the Zodiac. It spans the
+                    150–180th degree of the zodiac. Under the tropical zodiac, the Sun transits this area, on average,
+                    between August 23 and September 22. Individuals born during these dates, depending on the system
+                    of astrology in question, may be called Virgos or Virgoans. They are also represented in
+                    newspaper horoscopes with other astrological signs. The symbol of the maiden is based on Astraea.
+                    In Greek mythology, she was the last immortal to abandon Earth at the end of the Silver Age when the
+                    gods fled to Olympus – hence the sign's association with Earth. Virgo is one of the three Earth
+                    signs, along with Capricorn and Taurus.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Virgo Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacOverview' %}">Virgo Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:VirgoBasicZodiacDetails' %}">Virgo Basic
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:VirgoHoroscopeDetails' %}">Virgo
+                            Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacCareerDetails' %}">Virgo Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacHealthDetails' %}">Virgo Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacLoveDetails' %}">Virgo Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacMoneyDetail' %}">Virgo Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacRetailDetails' %}">Virgo Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OriginDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Virgo Sign</h4>
+                <p>The constellation Virgo has different origins depending on mythology. Most myths generally view Virgo
+                    as a maiden with associations to wheat. In Greek and Roman mythology, the constellation is related
+                    to Demeter, the Greek goddess of harvest, or her daughter Persephone, queen of the Underworld. [6]
+                    Others associate it with the myth of Parthenos (meaning virgin in Greek) which explains how the
+                    actual constellation Virgo came to be.</p>
+                <p>In the legend, Parthenos is the daughter of Staphylus and Chrysothemis, and sister to Rhoeo and
+                    Molpadia. Rhoeo had been impregnated by Apollo, but when her father discovered her pregnancy, he
+                    assumed it was by a random suitor and was greatly ashamed. As punishment, he locked her in a box and
+                    threw her in a river. After the terrible fate of their sister, Parthenos and Molpadia lived in fear
+                    of their father's terrible wrath. One evening, Staphylus left his daughters in charge of a very
+                    valuable bottle of wine. When they both accidentally fell asleep, one of their swine broke the
+                    bottle. Terrified of their father, the sisters fled to a nearby cliff and threw themselves off. But
+                    because of his previous relations with Rhoeo, Apollo saved his two sisters and delivered them to the
+                    safety to the nearby cities in Cherronseos. Molpadia ended up in Castabus where she changed her name
+                    to Hemithea and was worshipped as a local goddess for many years. Parthenos settled in Bubastus
+                    where she was also worshipped as a local goddess. According to another story, Parthenos was a
+                    daughter of Apollo who made the constellation to commemorate her death at a young age.</p>
+                <p>Another Greek myth states that Virgo is the Athenian maiden Erigone, daughter of Icarius. After
+                    Icarius was murdered by his shepherds in a drunken rage, Virgo hanged herself in grief, while her
+                    dog Maera threw herself off a cliff in grief. Zeus or Dionysus pitied the family and placed them
+                    in the sky as constellations: Erigone became Virgo, Icarius became Bootes, and Maera became Canis
+                    Minor.</p>
+                <p>In Egyptian mythology, the time when the Sun was in the constellation Virgo marked the beginning of
+                    the wheat harvest thus connecting Virgo back to the wheat grain. In Christianity, Jesus was born to
+                    a virgin in the town of Bethlehem ("bread"); the ancient Zodiac ended in the constellation Leo and
+                    began with Virgo. Virgo has the equivalent sign in Indian astrology as the Kanya (which also means
+                    "maiden") and has even been connected with the Virgin Mary.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Virgo Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacOverview' %}">Virgo Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:VirgoBasicZodiacDetails' %}">Virgo Basic
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:VirgoHoroscopeDetails' %}">Virgo
+                            Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacCareerDetails' %}">Virgo Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacHealthDetails' %}">Virgo Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacLoveDetails' %}">Virgo Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacMoneyDetail' %}">Virgo Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacRetailDetails' %}">Virgo Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Virgo Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>The Maiden</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>August 23 – September 23 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Virgo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td>Earth</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Mutable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td> Mercury</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Jupiter and Neptune</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>Mercury</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Venus</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Virgo Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacOverview' %}">Virgo Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:VirgoBasicZodiacDetails' %}">Virgo Basic
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:VirgoHoroscopeDetails' %}">Virgo
+                            Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacCareerDetails' %}">Virgo Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacHealthDetails' %}">Virgo Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacLoveDetails' %}">Virgo Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:VirgoZodiacMoneyDetail' %}">Virgo Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacRetailDetails' %}">Virgo Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Virgo.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Virgo Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;August 23 – September 23</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Virgo Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:VirgoZodiacOverview' %}">Virgo Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:VirgoBasicZodiacDetails' %}">Virgo
+                                    Basic Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:VirgoHoroscopeDetails' %}">Virgo Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacCareerDetails' %}">Virgo
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:VirgoZodiacHealthDetails' %}">Virgo Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacLoveDetails' %}">Virgo Love
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:VirgoZodiacMoneyDetail' %}">Virgo Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacRetailDetails' %}">Virgo
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <script src="{% static 'MyZodiacSigns/JS/MainCard.js' %}"></script>
+  <script src="{% static 'MyZodiacSigns/JS/Feedback.js' %}"></script>
+  <script src="https://kit.fontawesome.com/585125ad6c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/NavbarStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/CarouselContentStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/TabStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/CardStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/TemplateStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/FlexStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/BirthdayContentStyling.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/LoadingSnipper.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/MediaQueries.css' %}">
+  <link rel="stylesheet" href="{% static 'MyZodiacSigns/CSS/AccordionStyling.css' %}">
+  <title>{% block title %} Navigation Bar{% endblock title %} </title>
+  <link rel="icon" href="/media/Logo.png" type="image/x-icon" class='icon-sty'>
+</head>
+<style>
+  .fa-star-sty {
+    color: blue;
+  }
+
+  .checked {
+    color: orange;
+  }
+</style>
+
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <nav class="navbar-sty navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img class="ilogo-sty" src="/media/Logo.png" alt="Company Logo" />Raj
+        Astrology Signs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'MyZodiacSigns:HomePage' %}">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'MyZodiacSigns:AboutPage' %}">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-expanded="false">Games</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:LoveCompatibility' %}">Love Compatibility</a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:ZodiacSignFindings' %}">Zodiac Sign Finding</a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:TodayGeneralBirthday' %}">Birthday Details</a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:DatewiseGeneralOverallDetails' %}">Datewise Birthday
+                Details</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overview Details
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Career Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Health Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Love Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Money Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Retail Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:OverallHoroscopeDetails' %}">Horoscope Details
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-expanded="false">
+              Horoscopes
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:DailyHoroscopes' %}"><img class="menu-logo-sty"
+                  src="/media/Horoscope_Types/Today_Symbol.png" />Daily Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:TomorrowHoroscopes' %}"><img class="menu-logo-sty"
+                  src="/media/Horoscope_Types/Tomorrow_Symbol.png" />Tomorrow Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:WeeklyHoroscopes' %}"><img class="menu-logo-sty"
+                  src="/media/Horoscope_Types/Weekly_Symbol.png" />Weekly Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:MonthlyHoroscopes' %}"><img class="menu-logo-sty"
+                  src="/media/Horoscope_Types/Monthly_Symbol.png" />Monthly Horoscope
+              </a>
+              <a class="dropdown-item" href="{% url 'MyZodiacSigns:YearlyHoroscopes' %}"><img class="menu-logo-sty"
+                  src="/media/Horoscope_Types/Yearly_Horoscopes.png" />Yearly Horoscope
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-expanded="false">
+              Zodiac Signs
+            </a>
+            <div class="dropdown-menu zodiac-dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdownMenuLink">
+              <div class='row-layout'>
+                <div class="column-layout">
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:AriesHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Aries.jpg" />Aries
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/taurus.jpg" />Taurus
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/gemini.jpg" />Gemini
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Cancer.jpg" />Cancer
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:LeoHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/leo.jpg" />Leo
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:VirgoHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Virgo.jpg" />Virgo
+                  </a>
+                </div>
+                <div class='column-layout'>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:LibraHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Libra.jpg" />Libra
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:ScorpioHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Scorpio.jpg" />Scorpio
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Saggitarius.jpg" />Sagittarius
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:CapricornHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Capricorn.jpg" />Capricorn
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Aquarius.jpg" />Aquarius
+                  </a>
+                  <a class="dropdown-item" href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}"><img
+                      class="menu-logo-sty" src="/media/Astro_signs/Pisces.jpg" />Pisces
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <div class="Acordion-Content-Styling">
+  {% block accordion %}
+  {% endblock %}
+    </div>
+      <!-- Form Content -->
+    <div class="FormContentStyling">
+      <h3 class="text-center"><i>Please provide your valuable Feedback</i></h3>
+      <div class="container-fluid">
+      <form class="Form-Content">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="FirstNameValidation">Enter your First Name:</label>
+            <input type="text" class="form-control" id="FirstNameValidation" placeholder="Enter your First name" required>
+            <div class="invalid-feedback">Enter your valid First Name</div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="LastNameValidation">Enter your Last Name:</label>
+            <input type="text" class="form-control" id="LastNameValidation" placeholder="Enter your Last name" required>
+            <div class="invalid-feedback">Enter your valid Last Name</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Enter your email Id:</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email Id" required>
+              <div class="invalid-feedback">Enter valid email id</div>
+          </div>
+            <div class="form-group col-md-6">
+              <label for="UsernameValidation">Enter your username:</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup">@</span>
+              </div>
+              <input type="text" class="form-control" id="UsernameValidation" placeholder="Username"
+                aria-describedby="inputGroup" required>
+              <div class="invalid-feedback">Enter valid Username</div>
+            </div>
+            </div>
+          </div>
+          <div class="form-row">
+          
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect1">Feedback Topic:</label>
+            <select class="form-control" id="exampleFormControlSelect1" required>
+              <option value="none" selected disabled hidden>Select a Topic</option>
+              <option value="General Horoscopes Details">General Horoscopes Details</option>
+              <option value="Daily Horoscopes Details">Daily Horoscopes Details</option>
+              <option value="Weekly Horoscopes Details">Weekly Horoscopes Details</option>
+              <option value="Tomorrow Horoscopes Details">Tomorrow Horoscopes Details</option>
+              <option value="Monthly Horoscopes Details">Monthly Horoscopes Details</option>
+              <option value="Yearly Horoscopes Details">Yearly Horoscopes Details</option>
+              <option value="Career Horoscopes Details">Career Horoscopes Details</option>
+              <option value="Health Horoscopes Details">Health Horoscopes Details</option>
+              <option value="Basic Horoscopes Details">Basic Horoscopes Details</option>
+              <option value="Love Horoscopes Details">Love Horoscopes Details</option>
+              <option value="Retail Horoscopes Details">Retail Horoscopes Details</option>
+              <option value="Money Horoscopes Details">Money Horoscopes Details</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect1">Star rating on that topic:</label>
+            <select class="form-control" id="exampleFormControlSelect1" required>
+              <option value="none" selected disabled hidden>Give your Star rating</option>
+              <option value="0/5">Star Rating : 0/5</option>
+              <option value="1/5">Star Rating : 1/5</option>
+              <option value='2/5'>Star Rating : 2/5</option>
+              <option value='3/5'>Star Rating : 3/5</option>
+              <option value='4/5'>Star Rating : 4/5</option>
+              <option value='5/5'>Star Rating : 5/5</option>
+            </select>
+            <div class="invalid-feedback">Give your rating</div>
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Please Give your valuable Feedback:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Agree to terms and conditions about Feedback Policy
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Feedback</button>
+      </form>
+    </div>
+    </div>
+    <!-- Footer Content -->
+    <footer class="bg-white">
+      <div class="container p-3">
+        <div class="row p-2">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-3 mb-lg-0"><img src="/media/Raj_Horoscopes.png" alt=""
+              width="180" class="mb-3">
+            <p class="font-italic text-muted">Raj Horoscopes website is all about the basic details of horoscope details
+              like health, career, Overallview.. etc.,</p>
+            <ul class="list-inline mt-3">
+              <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+                    class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                    class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                    class="fa fa-pinterest"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-3">Horoscopes</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="m-2"><a href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}" class="text-muted">Career</a>
+              </li>
+              <li class="m-2"><a href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}" class="text-muted">Health</a>
+              </li>
+              <li class="m-2"><a href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}" class="text-muted">Retail</a>
+              </li>
+              <li class="m-2"><a href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}" class="text-muted">Love</a></li>
+              <li class="m-2"><a href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}" class="text-muted">Money</a></li>
+              <li class="m-2"><a href="{% url 'MyZodiacSigns:OverallHoroscopeDetails' %}"
+                  class="text-muted">Horoscopes</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-3">Games</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:ZodiacSignFindings' %}" class="text-muted">Find Zodiac
+                  Sign</a></li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:LoveCompatibility' %}" class="text-muted">Love
+                  Compatibility</a></li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:TodayGeneralBirthday' %}" class="text-muted">Birthdate</a>
+              </li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:DatewiseGeneralOverallDetails' %}"
+                  class="text-muted">Datewise Birthdate</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-3">Zodiac Details</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:DailyHoroscopes' %}" class="text-muted">Daily
+                  Horoscopes</a></li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:TomorrowHoroscopes' %}" class="text-muted">Tomorrow
+                  Horoscopes</a></li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:WeeklyHoroscopes' %}" class="text-muted">Weekly
+                  Horoscopes</a></li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:MonthlyHoroscopes' %}" class="text-muted">Monthly
+                  Horoscopes</a></li>
+              <li class="mb-2"><a href="{% url 'MyZodiacSigns:YearlyHoroscopes' %}" class="text-muted">Yearly
+                  Horoscopes</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-8 col-8 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-3">For More Details:</h6>
+            <p class="text-muted mb-3">Raj Horoscopes website is about the basic details of horoscopes like daily,
+              weekly Monthly horoscope details. Its styling is purely unique.</p>
+            <div class="p-1 rounded border">
+              <div class="input-group">
+                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                  class="form-control border-0 shadow-0">
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link"><i
+                      class="fa fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyrights -->
+      <div class="bg-light p-2">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">© Raj Horoscopes 2022 All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+<!--script>
+  var myVar;
+  function myFunction() {
+    myVar = setTimeout(showPage, 1760);}
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";}
+</!--script-->
+
+</html>

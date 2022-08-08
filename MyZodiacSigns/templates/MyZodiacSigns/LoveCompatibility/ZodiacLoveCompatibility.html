@@ -1,0 +1,50 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block title %} Daily Horoscopes {% endblock title %}
+{% block content %}
+<div class='Total-content'>
+  <div class="container">
+    <div class='FormContentStyling'>
+      <h3><i>Love Compatibity between Two Zodiac Signs</i></h3>
+      <form action="" method="POST">
+        {% csrf_token %} {{form|crispy}}
+        <input type="Submit" class="btn btn-primary" name="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+  <div class="Overall-Content">
+    <div class="container">
+      {% if submitbutton == "Submit" %}
+      <div class="DisplayContent">
+        <div class='Image-Container-Styling d-flex flex-column align-items-center justify-content-center'>
+          <img src="/media/Zodiac_Carousel.png" class="w-100 isty" />
+          <div class="box-caption p-2 bd-highlight align-self-start">
+            <img src="{{LoveCompatibity.zodiac_img1}}" class='img-block-sty' alt="{{zodiac1}}" />
+          </div>
+          <div class="box-caption p-2 bd-highlight align-self-center">
+            <img src="/media/Love/Blue_Heart_Symbol.png" class='LoveSymbolSty' alt="Love" />
+          </div>
+          <div class="box-caption p-2 bd-highlight align-self-end">
+            <img src="{{LoveCompatibity.zodiac_img2}}" class='img-block-sty' alt="{{zodiac2}}" />
+          </div>
+        </div>
+      </div>
+      <div class='Star-Rating-Content text-center'>
+        {% for i in LoveCompatibity.Zodiac_rating_Range %}
+        <span class="fa fa-star star-checked"></span>
+        {% endfor %}
+        {% for i in LoveCompatibity.Zodiac_Remaining_Rating_Range %}
+        <span class="fa fa-star"></span>
+        {% endfor %}
+        <p><b>{{LoveCompatibity.Zodiac_rating}}/10</b></p>
+      </div>
+      <div class="Zodiac-Content">
+        <h3><img src="/media/Love/Blue_Heart_Symbol.png" class='LoveSmallSymbolSty' alt="Love" />&nbsp;<i>Love Compatibility between {{zodiac1}} and {{zodiac2}}</i></h3>
+        <div class='Compatibility-Description'><i>{{LoveCompatibity.Zodiac_Desc|linebreaksbr}}</i></div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

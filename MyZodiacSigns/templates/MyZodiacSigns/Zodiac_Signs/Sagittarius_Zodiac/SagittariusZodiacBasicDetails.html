@@ -1,0 +1,283 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Sagittarius Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Sagittarius_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Sagittarius Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#AstrologyDetails">Astrology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#CulturalImpressionDetails">Cultural Impression</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">{{Sagittarius_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Sagittarius Sign</h4>
+                <p>Sagittarius (♐︎) (Greek: Τοξότης Toxótēs, Latin: Sagittarius) is the ninth astrological sign, which
+                    is associated with the constellation Sagittarius and spans 240–270th degrees of the zodiac. Under
+                    the tropical zodiac, the sun transits this sign between approximately November 22 and December 21
+                    and under the sidereal zodiac from December 18 - January 15. Greek mythology associates Sagittarius
+                    with the centaur Chiron, who mentored Achilles, a Greek hero of the Trojan War, in archery.</p>
+                <p> Sagittarius, the half human and half horse, is the centaur of mythology, the learned healer whose
+                    higher intelligence forms a bridge between Earth and Heaven. Also known as the Archer, Sagittarius
+                    is represented by the symbol of a bow and arrow.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Sagittarius Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">Sagittarius Overview
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusBasicZodiacDetails' %}">Sagittarius Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}">Sagittarius Horoscope
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacCareerDetails' %}">Sagittarius
+                            Career Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacHealthDetails' %}">Sagittarius Health
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">Sagittarius
+                            Love Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacMoneyDetail' %}">Sagittarius Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacRetailDetails' %}">Sagittarius
+                            Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="AstrologyDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Sagittarius Sign</h4>
+                <p>Sagittarius is the first fire sign in the zodiac, the other fire signs being Leo and Sagittarius.
+                    Individuals born between these dates, depending on which system of astrology they subscribe to, may
+                    be called Arians or Ariens. The color for Sagittarius is red. In astrology, Sagittarius is the
+                    cardinal sign of
+                    the fire trigon. It is one of the six positive signs.
+                    The equivalent in the Hindu solar calendar is Meṣa.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Sagittarius Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">Sagittarius Overview
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusBasicZodiacDetails' %}">Sagittarius Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}">Sagittarius Horoscope
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacCareerDetails' %}">Sagittarius
+                            Career Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacHealthDetails' %}">Sagittarius Health
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">Sagittarius
+                            Love Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacMoneyDetail' %}">Sagittarius Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacRetailDetails' %}">Sagittarius
+                            Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="CulturalImpressionDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Sagittarius Sign</h4>
+                <p>It is the coat of arms of Isfahan, Iranian city.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Sagittarius Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">Sagittarius Overview
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusBasicZodiacDetails' %}">Sagittarius Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}">Sagittarius Horoscope
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacCareerDetails' %}">Sagittarius
+                            Career Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacHealthDetails' %}">Sagittarius Health
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">Sagittarius
+                            Love Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacMoneyDetail' %}">Sagittarius Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacRetailDetails' %}">Sagittarius
+                            Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Sagittarius Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Archer</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>November 22 – December 21 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Sagittarius</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Fire</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Mutable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td> Jupiter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Mercury</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>South Node, Chiron (questionable)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>North Node, Ceres (questionable)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Sagittarius Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">Sagittarius Overview
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusBasicZodiacDetails' %}">Sagittarius Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}">Sagittarius Horoscope
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacCareerDetails' %}">Sagittarius
+                            Career Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacHealthDetails' %}">Sagittarius Health
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">Sagittarius
+                            Love Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:SagittariusZodiacMoneyDetail' %}">Sagittarius Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:SagittariusZodiacRetailDetails' %}">Sagittarius
+                            Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Sagittarius.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Sagittarius Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;Mar 21 - Apr 19</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Sagittarius Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">Sagittarius Overview
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusBasicZodiacDetails' %}">Sagittarius Basic
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}">Sagittarius Horoscope
+                                    Details</a>
+                                <a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusZodiacCareerDetails' %}">Sagittarius Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusZodiacHealthDetails' %}">Sagittarius Health
+                                    Details</a>
+                                <a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">Sagittarius Love
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusZodiacMoneyDetail' %}">Sagittarius Money
+                                    Details</a>
+                                <a class="link-item"
+                                    href="{% url 'MyZodiacSigns:SagittariusZodiacRetailDetails' %}">Sagittarius Retail
+                                    Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

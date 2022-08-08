@@ -1,0 +1,105 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Birthday Party Destination Details{% endblock title %}
+{% block content %}
+<div class="Total-content">
+    <div class="container">
+        <div class="Birthday-Content-Styling">
+            <div class='Birthday-Tab-Content-Styling d-none d-md-inline-block'>
+                <div class="d-flex justify-content-between ">
+                    <div class="p-2  align-self-center">
+                        <img src="/media/Birthday/Emoji/BdayEmoji.png" class="bday-logo" alt="Birthday Emoji" />
+                    </div>
+                    <div class="p-2 text-center">
+                        <div class="Horizonatal-Baloon-Styling text-center">
+                            <img src="/media/Birthday/Baloons/Horizontal_Baloon.png" class="bday-baloon-logo"
+                                alt="Birthday Baloons" />
+                        </div>
+                        <div class='d-flex justify-content-between'>
+                            <div class='p-2'>
+                                <img src="/media/Birthday/Gifts/Gift.png" class="Bday-Gifts" alt="Birthday Gifts" />
+                            </div>
+                            <div class='Cake-Content p-2'>
+                                <img src="/media/Birthday/Cakes/Special_Cake.png" class="bday-cake-logo"
+                                    alt="Birthday Special Cake" />
+                            </div>
+                            <div class='p-2 align-self-center'>
+                                <img src="/media/Birthday/Emoji/Friends-Emoji.png" class="bday-friends-logo"
+                                    alt="Birthday Friends" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 align-self-center">
+                        <img src="/media/Birthday/Baloons/Vertical_Baloon.png" class="verticalbaloon-logo"
+                            alt="Birthday Baloons" />
+                    </div>
+                </div>
+            </div>
+            <div class="Mobile-MobileContentSTyling d-block d-md-none">
+                <div class="p-2">
+                    <div class="Horizonatal-Baloon-Styling text-center">
+                        <img src="/media/Birthday/Baloons/Horizontal_Baloon.png" class="bday-baloon-logo"
+                            alt="Birthday Baloons" />
+                    </div>
+                    <div class='d-flex justify-content-between'>
+                        <div class='p-2'>
+                            <img src="/media/Birthday/Gifts/Gift.png" class="Bday-Gifts" alt="Birthday Gifts" />
+                        </div>
+                        <div class='Cake-Content p-2'>
+                            <img src="/media/Birthday/Cakes/Special_Cake.png" class="bday-cake-logo"
+                                alt="Birthday Special Cake" />
+                        </div>
+                        <div class='p-2 align-self-center'>
+                            <img src="/media/Birthday/Emoji/Friends-Emoji.png" class="bday-friends-logo"
+                                alt="Birthday Friends" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class='Img-Icon-Content text-center'>
+                <img src="/media/Birthday/OtherDetails/PartyDestinations.png" class="bday-gift-icon" class='gifts' />
+            </div>
+            <h3 class='text-center'><i>Gift Ideas for {{TodayBirthdate.ZodiacSign}} Birthday Horoscopes</i></h3>
+            <h5 class='text-center'><i>For those who born on {{TodayBirthdate.Today_Day}}
+                    {{TodayBirthdate.Today_Month}}</i></h5>
+            <div class='description-styling'>
+                <div class='para-sty'>
+                    {% for i in TodayBirthdate.Birthday_Desc %}
+                    <p><i>{{i}}</i></p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class='More-Birthday-Details'>
+                <div class='row'>
+                    <div class="col-4 col-sm-4 col-md-4 card-sty text-center">
+                        <a href="{% url 'MyZodiacSigns:TodayBirthPartyDetails' %}" class='alink-sty'>
+                            <img src="/media/Birthday/OtherDetails/BirthdayParty.png" class='bday-party-icon'
+                                alt="Birthday Party" />
+                            <p class='text-center para-sty para-link-sty'><a href="{% url 'MyZodiacSigns:TodayBirthPartyDetails' %}" class='alink-sty'>Birthday Party
+                                    Ideas</a></p>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 card-sty text-center">
+                        <a href="{% url 'MyZodiacSigns:TodayBirthGiftDetails' %}" class='alink-sty'>
+                            <img src="/media/Birthday/OtherDetails/Gifts.png" class='bday-gift-icon'
+                                alt="Birthday Gifts" />
+                            <p class='text-center para-sty para-link-sty'><a href="{% url 'MyZodiacSigns:TodayBirthGiftDetails' %}" class='alink-sty'>Birthday Party
+                                    Gifts</a></p>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 card-sty text-center">
+                        <a href="{% url 'MyZodiacSigns:TodayBirthPamperingDetails' %}" class='alink-sty'>
+                            <img src="/media/Birthday/OtherDetails/Crown.png" class='bday-pampering-icon'
+                                alt="Birthday Pampering" />
+                            <p class='text-center para-sty para-link-sty'><a href="{% url 'MyZodiacSigns:TodayBirthPamperingDetails' %}" class='alink-sty'>Birthday Party
+                                    Pampering</a></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

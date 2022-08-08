@@ -1,0 +1,140 @@
+@media (max-width: 991.98px) {
+    .zodiac-dropdown-menu {
+        width: 100% !important;
+    }
+
+    .dropdown-menu, .row-layout {
+        width: 100% !important;
+    }
+
+    .column-layout {
+        width: 50% !important;
+    }
+
+    .column-layout a {
+        padding: 0.75rem 1.1rem !important;
+    }
+
+    .nav-item a {
+        font-size: 1.1rem !important;
+    }
+}
+
+.dropdown-menu a {
+    padding: 0.75rem 1.1rem !important;
+}
+
+@media (min-width: 992px) {
+    .zodiac-dropdown-menu {
+        width: 20rem;
+    }
+
+    .column-layout a {
+        padding: 0.75rem 1.1rem !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and below) */
+@media (max-width: 575.98px) {
+    .image-text-block {
+        padding: 0.1rem 0.2rem;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+    .block-asty {
+        color: white;
+        background-color: #000080;
+        font-size: 0.7rem;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .nav-item a {
+        font-size: 0.94rem !important;
+    }
+    .img-card-top {
+        width: 4rem !important;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .image-text-block {
+        padding: 0.225rem 0.28rem;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+    .block-asty {
+        color: white;
+        background-color: #000080;
+        font-size: 0.85rem;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .nav-item a {
+        font-size: 0.95rem !important;
+    }
+    .img-card-top {
+        width: 4.25rem !important;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .image-text-block {
+        padding: 0.35rem 0.4rem;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+    .block-asty {
+        color: white;
+        background-color: #000080;
+        font-size: 0.975rem;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .nav-item a {
+        font-size: 1rem !important;
+    }
+    .img-card-top {
+        width: 4.4rem !important;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .image-text-block {
+        padding: 0.45rem 0.525rem;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+    .block-asty {
+        color: white;
+        background-color: #000080;
+        font-size: 1.15rem;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .nav-item a {
+        font-size: 1.1rem !important;
+    }
+    .img-card-top {
+        width: 4.8rem !important;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .image-text-block {
+        padding: 0.6rem 0.7rem;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+    .block-asty {
+        color: white;
+        background-color: #000080;
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .nav-item a {
+        font-size: 1.1rem !important;
+    }
+    .img-card-top {
+        width: 5.25rem !important;}
+}

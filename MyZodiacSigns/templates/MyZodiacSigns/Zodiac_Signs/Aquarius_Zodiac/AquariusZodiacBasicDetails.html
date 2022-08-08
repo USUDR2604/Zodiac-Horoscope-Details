@@ -1,0 +1,173 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Aquarius Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Aquarius_Zodiac.jpg" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Aquarius Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ConstellationDetails">Constellation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MythologyDetails">Mythology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">{{Aquarius_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Aquarius Sign</h4>
+                <p>Aquarius (♒︎) is the eleventh astrological sign in the zodiac, originating from the constellation Aquarius. Under the tropical zodiac, the Sun is in the Aquarius sign between about January 21 and about February 20, while under the sidereal Zodiac, the sun is in Aquarius from approximately February 15 to March 14, depending on the leap year.</p>
+                    <div class="LinkContainerDetailSty">
+                        <h4 class="LinkCaptionSty">More details about Aquarius Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">Aquarius Overview Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusBasicZodiacDetails' %}">Aquarius Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}">Aquarius Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacCareerDetails' %}">Aquarius Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacHealthDetails' %}">Aquarius Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">Aquarius Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacMoneyDetail' %}">Aquarius Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacRetailDetails' %}">Aquarius Retail Details</a></span>
+                        <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                    </div>
+            </div>
+            <div id="ConstellationDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Aquarius Sign</h4>
+                <p>Aquarius is a winter constellation in the northern hemisphere, found near Pisces and Cetus. It is especially notable as the radiant for four meteor showers, the largest of which is the Southern Delta Aquariids in late July and early August.</p>
+                    <div class="LinkContainerDetailSty">
+                        <h4 class="LinkCaptionSty">More details about Aquarius Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">Aquarius Overview Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusBasicZodiacDetails' %}">Aquarius Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}">Aquarius Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacCareerDetails' %}">Aquarius Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacHealthDetails' %}">Aquarius Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">Aquarius Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacMoneyDetail' %}">Aquarius Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacRetailDetails' %}">Aquarius Retail Details</a></span>
+                        <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                    </div>
+            </div>
+            <div id="MythologyDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Aquarius Sign</h4>
+                <p>The water carrier represented by the zodiacal constellation Aquarius is Ganymede, a beautiful Phrygian youth. Ganymede was the son of Tros, king of Troy (according to Lucian, he was also the son of Dardanus). While tending to his father's flocks on Mount Ida, Ganymede was spotted by Zeus. The king of gods fell in love with him and flew down to the mountain in the form of a large bird, whisking Ganymede away to the heavens. Ever since, the boy has served as cupbearer to the gods. Ovid has Orpheus sing the tale.</p>
+                    <div class="LinkContainerDetailSty">
+                        <h4 class="LinkCaptionSty">More details about Aquarius Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">Aquarius Overview Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusBasicZodiacDetails' %}">Aquarius Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}">Aquarius Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacCareerDetails' %}">Aquarius Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacHealthDetails' %}">Aquarius Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">Aquarius Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacMoneyDetail' %}">Aquarius Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacRetailDetails' %}">Aquarius Retail Details</a></span>
+                        <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                    </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Aquarius Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Water - Bearer</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>January 20 – February 18 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Aquarius</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Air</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Fixed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td>Saturn (traditional), Uranus (modern) </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Sun</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>Neptune</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Pluto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Aquarius Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">Aquarius Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:AquariusBasicZodiacDetails' %}">Aquarius Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}">Aquarius Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacCareerDetails' %}">Aquarius Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacHealthDetails' %}">Aquarius Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">Aquarius Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacMoneyDetail' %}">Aquarius Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacRetailDetails' %}">Aquarius Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Aquarius.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Aquarius Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;January 20 – February 18</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Aquarius Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">Aquarius Overview Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:AquariusBasicZodiacDetails' %}">Aquarius Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}">Aquarius Horoscope Details</a>
+                                    <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacCareerDetails' %}">Aquarius Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacHealthDetails' %}">Aquarius Health Details</a>
+                                    <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">Aquarius Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacMoneyDetail' %}">Aquarius Money Details</a>
+                                    <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacRetailDetails' %}">Aquarius Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                                    <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

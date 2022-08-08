@@ -1,0 +1,141 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Taurus Career Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Taurus_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacCareerContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Taurus Career Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacCareerContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#YesterdayCareer"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Yesterday_Details.png" /><span
+                    class="info-sty d-none d-md-inline-block">YESTERDAY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#TodayCareer"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Today_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">TODAY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#TomorrowCareer"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Tomorrow_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">TOMORROW</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#WeeklyCareer"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Weekly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">WEEKLY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MonthlyCareer"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Monthly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">MONTHLY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Yearly_Horoscopes.png" /><span
+                    class="info-sty d-none d-md-inline-block">{{TaurusCareerDetails.Year}}</span></span></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="YesterdayCareer" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Taurus Yesterday Career Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{TaurusCareerDetails.Yesterday_Date}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{TaurusCareerDetails.Yesterday_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="TodayCareer" class='container tab-pane active'>
+                <h4 class="Detail-Caption-Sty">Taurus Today Career Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{TaurusCareerDetails.Present_Date}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{TaurusCareerDetails.Today_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="TomorrowCareer" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Taurus Tomorrow Career Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{TaurusCareerDetails.Tomorrow_Date}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{TaurusCareerDetails.Tomorrow_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="WeeklyCareer" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Taurus Weekly Career Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{TaurusCareerDetails.start_week_date}}&nbsp;-&nbsp;{{TaurusCareerDetails.end_week_date}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{TaurusCareerDetails.Weekly_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="MonthlyCareer" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Taurus Monthly Career Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{TaurusCareerDetails.Month_Details}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{TaurusCareerDetails.Monthly_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,329 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Cancer Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Cancer_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Cancer Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#BackgroundDetails">Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MythologyDetails">Mythology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#InArtDetails">In Art Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">{{Cancer_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Cancer Sign</h4>
+                <p>Cancer (♋︎) ("crab" in Latin) is the fourth astrological sign in the zodiac, originating from the
+                    constellation of Cancer. It spans from 90° to 120° celestial longitude. Under the tropical zodiac,
+                    the Sun transits this area between approximately June 22 and July 22, and under the sidereal
+                    zodiac, the Sun transits this area between approximately July 16 and August 17.</p>
+                <p>In astrology, Cancer is the cardinal sign of the Water trigon, which is made up of Cancer, Pisces,
+                    and Scorpio. It is one of the six negative signs, and its ruling planet is the Moon. Though some
+                    depictions of Cancer feature a lobster or crayfish, the sign is most often represented by the
+                    crab, based on the Karkinos. Cancer's opposite sign is Capricorn.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="BackgroundDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Cancer Sign</h4>
+                <p>Cancer is the fourth sign of the zodiac, which the sun enters at the summer solstice in the Northern
+                    Hemisphere, on approximately June 21. Those who are born from approximately June 21 to July 22
+                    (depending upon the year) are born under Cancer. Individuals born during these dates, depending
+                    on which system of astrology they subscribe to, may be called "Cancerians". Cancer is a northern
+                    sign, and its opposite sign is Capricorn. Cancer is a cardinal sign.</p>
+                <p> Water is the element associated with Cancer, and, alongside Scorpio and Pisces, it forms the
+                    water trigon. The water trigon is one of four elemental trigons in the zodiac, with the other
+                    three being fire, earth, and air. When a trigon is influential, it is said to affect changes on
+                    earth. Cancer is said to be the house of Neptune and the exaltation of Jupiter, both
+                    astronomical bodies over those born under Cancer. Its ruling planet is the Moon.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="MythologyDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Cancer Sign</h4>
+                <p>In Hindu astrology, the sign of Cancer is named Karka and its Lord is Moon. Divine associations
+                    with Cancer in Renaissance astrology are Luna/Diana, both goddesses that represent the Moon,
+                    Cancer's ruling planet.</p>
+                <h4>Early history</h4>
+                <p> "Cancer" is an ancient word of Indo-European origin, derived from a root meaning "to scratch."
+                    In ancient Egypt, the sign of Cancer was conceived as a scarab beetle, while in Mesopotamia it was
+                    represented by a turtle. In each case, the animal representative of the sign was perceived as
+                    "pushing" the sun across the heavens, initiating the summer solstice.</p>
+                <p>Latin cancer is the generic word for 'crab'. According to Greek myth, the symbol of Cancer—often
+                    a crab, though sometimes a lobster—is based on the Karkinos (Greek: "Cancer"), a crab crushed under
+                    the foot of Hercules, and whose remains were placed in the sky by Hera, forming the Cancer
+                    constellation.In Roman variations of the story, it is Juno—Hera's counterpart in Roman
+                    mythology—who places the crab in the sky. Naturalist Richard Hinckley Allen, in 1899, deemed
+                    Cancer the "most inconspicuous figure in the zodiac," adding that its mythology "apologizes for its
+                    being there by the story that when the Crab was crushed by Hercules, for pinching his toes during a
+                    contest with the Hydra in the Marsh of Lerna, Juno exalted it to the sky."</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="InArtDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Cancer Sign</h4>
+                <p>During the Middle Ages, the zodiacal symbol of Cancer was included in devotional books and
+                    incorporated into monumental sculptures. The depiction of Cancer as a crab is most prevalent in
+                    Mediterranean and Western European art.</p>
+                <p>In Dante Alighieri's Paradiso, he makes reference to Cancer, writing:</p>
+                <div>Thereafterward a light among them brightened,<br>
+                    So that, if Cancer one such crystal had,<br>
+                    Winter would have a month of one sole day.<br></div>
+                <p> — Dante Alighieri, Paradiso</p>
+                <p> Cancer is figured in Giovanni Maria Falconetto's 1517 painting, Cancer, as the guardian of the city
+                    of Verona. The Cancer symbol is also depicted in Agostino di Duccio's sculpture View of Rimini
+                    Under the Sign of Cancer (1450). In Giorgio Vasari's fresco, the Chamber of Fortune, Cancer is
+                    represented in the northern compartment of the ceiling, pictured by Diana, holding the moon, along
+                    with a crab.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Cancer Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Crab</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>June 21 – July 22 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Cancer</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Water</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Cardinal</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td>Moon</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Saturn</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>Jupiter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Mars</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Cancer.png">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Cancer Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;Mar 21 - Apr 19</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer
+                                    Basic Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer
+                                    Love Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

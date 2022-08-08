@@ -1,0 +1,266 @@
+.Birthday-Content-Styling {
+    background-color: rgb(0, 0, 0, 0.13);
+    border-radius: 0.7rem;
+    padding: 1.2rem 0.9rem;
+}
+
+@media (min-width: 1199.98px) {
+    body {
+        font-size: 16px;
+    }
+
+    .bday-logo {
+        width: 12rem;
+    }
+
+    .bday-baloon-logo {
+        height: 5rem;
+    }
+
+    .bday-cake-logo {
+        height: 10rem;
+    }
+
+    .verticalbaloon-logo {
+        height: 14rem;
+    }
+
+    .Bday-Gifts {
+        height: 9rem;
+    }
+
+    .bday-friends-logo {
+        height: 6rem;
+    }
+
+    .bday-party-icon {
+        height: 10rem;
+    }
+
+    .bday-destination-icon {
+        height: 10rem;
+    }
+
+    .bday-pampering-icon {
+        height: 8.5rem;
+    }
+
+    .bday-gift-icon {
+        height: 11rem;
+    }
+
+    .card-sty {
+        height: 13rem;
+        padding: 0.3rem 0.25rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        font-size: 15px;
+    }
+
+    .bday-logo {
+        width: 9.4rem;
+    }
+
+    .bday-baloon-logo {
+        height: 4rem;
+    }
+
+    .bday-cake-logo {
+        height: 8.6rem;
+    }
+
+    .verticalbaloon-logo {
+        height: 11rem;
+    }
+
+    .Bday-Gifts {
+        height: 8rem;
+    }
+
+    .bday-friends-logo {
+        height: 4rem;
+    }
+
+    .bday-party-icon {
+        height: 8.75rem;
+    }
+
+    .bday-destination-icon {
+        height: 9.4rem;
+    }
+
+    .bday-pampering-icon {
+        height: 7rem;
+    }
+
+    .bday-gift-icon {
+        height: 9.5rem;
+    }
+
+    .card-sty {
+        height: 11.6rem;
+        padding: 0.3rem 0.25rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: 11px;
+    }
+
+    .bday-baloon-logo {
+        height: 3rem;
+    }
+
+    .bday-cake-logo {
+        height: 4rem;
+    }
+
+    .Bday-Gifts {
+        height: 4.25rem;
+    }
+
+    .bday-friends-logo {
+        height: 2.5rem;
+    }
+
+    .bday-party-icon {
+        height: 5.8rem;
+    }
+
+    .bday-destination-icon {
+        height: 6rem;
+    }
+
+    .bday-pampering-icon {
+        height: 3.5rem;
+    }
+
+    .bday-gift-icon {
+        height: 5rem;
+    }
+
+    .card-sty {
+        height: 8.2rem;
+        padding: 0.3rem 0.25rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        font-size: 12px;
+    }
+
+    .bday-baloon-logo {
+        height: 3rem;
+    }
+
+    .bday-cake-logo {
+        height: 7rem;
+    }
+
+    .Bday-Gifts {
+        height: 6rem;
+    }
+
+    .bday-friends-logo {
+        height: 3rem;
+    }
+
+    .bday-party-icon {
+        height: 6.7rem;
+    }
+
+    .bday-destination-icon {
+        height: 7.4rem;
+    }
+
+    .bday-pampering-icon {
+        height: 4.9rem;
+    }
+
+    .bday-gift-icon {
+        height: 7rem;
+    }
+
+    .card-sty {
+        height: 9rem;
+        padding: 0.3rem 0.25rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        font-size: 14px;
+    }
+
+    .bday-logo {
+        width: 5.5rem;
+    }
+
+    .bday-baloon-logo {
+        height: 4rem;
+    }
+
+    .bday-cake-logo {
+        height: 6rem;
+    }
+
+    .verticalbaloon-logo {
+        height: 6rem;
+    }
+
+    .Bday-Gifts {
+        height: 5rem;
+    }
+
+    .bday-friends-logo {
+        height: 3.6rem;
+    }
+
+    .bday-party-icon {
+        height: 7.5rem;
+    }
+
+    .bday-destination-icon {
+        height: 8.8rem;
+    }
+
+    .bday-pampering-icon {
+        height: 5.75rem;
+    }
+
+    .bday-gift-icon {
+        height: 8rem;
+    }
+
+    .card-sty {
+        height: 10.5rem;
+        padding: 0.3rem 0.25rem;
+    }
+}
+
+.description-styling {
+    padding: 1.5rem 1.2rem;
+}
+
+.para-sty {
+    font-size: 1rem;
+}
+
+.alink-sty {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.para-link-sty {
+    font-style: italic;
+}
+
+.bday-main-icon {
+    height: 10.8rem;
+}

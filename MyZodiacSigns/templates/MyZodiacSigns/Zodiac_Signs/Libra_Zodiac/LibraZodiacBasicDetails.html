@@ -1,0 +1,233 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Libra Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Libra_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Libra Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#AstrologicalAssociation">Astrological Association</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:LibraZodiacOverview' %}">{{Libra_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Libra Sign</h4>
+                <p>Libra (♎︎) is the seventh astrological sign in the zodiac. It spans 180°–210° celestial longitude.
+                    The Sun transits this sign on average between September 23 (September equinox) and October 23.
+                    The symbol of the scales is based on the Scales of Justice held by Themis, the Greek personification
+                    of divine law and custom. She became the inspiration for modern depictions of Lady Justice. The
+                    ruling planet of Libra is Venus. Libra is the only zodiac sign that is represented by an
+                    object; with the other eleven signs represented by either an animal or mythological character.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Libra Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacOverview' %}">Libra Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:LibraBasicZodiacDetails' %}">Libra Basic
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:LibraHoroscopeDetails' %}">Libra
+                            Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacCareerDetails' %}">Libra Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacHealthDetails' %}">Libra Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacLoveDetails' %}">Libra Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacMoneyDetail' %}">Libra Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacRetailDetails' %}">Libra Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="AstrologicalAssociation" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Libra Sign</h4>
+                <p>Libra is the cardinal modality of the three air signs, the others being Gemini and Aquarius. The main
+                    connotations of planets under this sign are sociable, rational, and detached when dealing with
+                    situations.Libra is symbolized by the scales and is associated with the Roman deity Iustitia.
+                    According to the writer Manilius, Roman judges are born under the sign of Libra.</p>
+                <p>The Moon was said to be in Libra when Rome was founded and this was based on the historical passage,
+                    which state "qua condita Roma". Everything was balanced under this righteous sign.
+                    Manilius once said that Libra was the sign "in which the seasons are balanced". Both the
+                    hours of the day and the hours of the night match each other.Thus why the Romans
+                    put so much trust in the "balanced sign". Going back to ancient Greek times, Libra the
+                    constellation between Virgo and Scorpio used to be ruled over by the constellation of Scorpio. They
+                    called the area the Latin word "chelae", which translated to "the claws" which can help identify the
+                    individual stars that make up the full constellation of Libra, since it was so closely identified
+                    with the Scorpion constellation in the sky.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Libra Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacOverview' %}">Libra Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:LibraBasicZodiacDetails' %}">Libra Basic
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:LibraHoroscopeDetails' %}">Libra
+                            Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacCareerDetails' %}">Libra Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacHealthDetails' %}">Libra Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacLoveDetails' %}">Libra Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacMoneyDetail' %}">Libra Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacRetailDetails' %}">Libra Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Libra Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Scales</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>September 23 – October 23 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Libra</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Air</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Cardinal</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td> Venus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Mars</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>Saturn</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Sun</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Libra Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacOverview' %}">Libra Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:LibraBasicZodiacDetails' %}">Libra Basic
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:LibraHoroscopeDetails' %}">Libra
+                            Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacCareerDetails' %}">Libra Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacHealthDetails' %}">Libra Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacLoveDetails' %}">Libra Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:LibraZodiacMoneyDetail' %}">Libra Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacRetailDetails' %}">Libra Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Libra.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Libra Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;September 23 – October 23</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Libra Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:LibraZodiacOverview' %}">Libra Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:LibraBasicZodiacDetails' %}">Libra
+                                    Basic Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:LibraHoroscopeDetails' %}">Libra Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacCareerDetails' %}">Libra
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:LibraZodiacHealthDetails' %}">Libra Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacLoveDetails' %}">Libra Love
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:LibraZodiacMoneyDetail' %}">Libra Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacRetailDetails' %}">Libra
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

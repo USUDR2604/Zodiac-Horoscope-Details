@@ -1,0 +1,245 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}Zodiac Sign Finding{% endblock title %}
+{% block content %}
+<div class='Total-content'>
+    <div class="container">
+
+        <div class='FormContentStyling'>
+            <h3 class='text-center'><i>Find your Zodiac Sign Now!</i></h3>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{form|crispy}}
+                <input type="Submit" name="submit" value="Submit" class='btn btn-info' />
+            </form>
+        </div>
+        <div class='Total-content'>
+            {% if submitbutton == "Submit" %}
+            <div class='FormContentStyling'>
+                <div class='Zodiac-Finding-Content'>
+                    <h5><i>Welcome to Raj Horoscopes Mr/Mrs {{ZodiacFindingDetails.Person_Name}}</i></h5>
+                    <h5><i>Mr/Mrs {{ZodiacFindingDetails.Person_Name}}, your age is
+                            {{ZodiacFindingDetails.Person_Age}}</i></h5>
+                    <h5><i>According to our Intel, Mr/Mrs {{ZodiacFindingDetails.Person_Name}} you belongs to
+                            {{ZodiacFindingDetails.Zodiac_Sign}} Zodiac Sign</i></h5>
+                    <div class="Image-Carousel-Content">
+                        {% if ZodiacFindingDetails.Zodiac_Sign == "Aries" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Aries_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Aries Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AriesZodiacOverview' %}">Aries Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:AriesBasicZodiacDetails' %}">Aries Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AriesHoroscopeDetails' %}">Aries Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AriesZodiacCareerDetails' %}">Aries Career
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AriesZodiacHealthDetails' %}">Aries Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AriesZodiacLoveDetails' %}">Aries Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AriesZodiacMoneyDetail' %}">Aries Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AriesZodiacRetailDetails' %}">Aries Retail
+                                Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Taurus" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Taurus_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Taurus Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus
+                                Retail Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Gemini" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Gemini_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Gemini Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini
+                                Retail Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Cancer" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Cancer_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Cancer Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer
+                                Retail Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Leo" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Leo_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Leo Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LeoZodiacOverview' %}">Leo Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:LeoBasicZodiacDetails' %}">Leo Basic
+                                Details</a><a class="link-item" href="{% url 'MyZodiacSigns:LeoHoroscopeDetails' %}">Leo
+                                Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:LeoZodiacCareerDetails' %}">Leo Career
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LeoZodiacHealthDetails' %}">Leo Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:LeoZodiacLoveDetails' %}">Leo Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LeoZodiacMoneyDetail' %}">Leo Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:LeoZodiacRetailDetails' %}">Leo Retail
+                                Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Virgo" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Virgo_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Virgo Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:VirgoZodiacOverview' %}">Virgo Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:VirgoBasicZodiacDetails' %}">Virgo Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:VirgoHoroscopeDetails' %}">Virgo Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacCareerDetails' %}">Virgo Career
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:VirgoZodiacHealthDetails' %}">Virgo Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacLoveDetails' %}">Virgo Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:VirgoZodiacMoneyDetail' %}">Virgo Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:VirgoZodiacRetailDetails' %}">Virgo Retail
+                                Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Libra" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Libra_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Libra Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LibraZodiacOverview' %}">Libra Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:LibraBasicZodiacDetails' %}">Libra Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LibraHoroscopeDetails' %}">Libra
+                                Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacCareerDetails' %}">Libra Career
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LibraZodiacHealthDetails' %}">Libra Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacLoveDetails' %}">Libra Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:LibraZodiacMoneyDetail' %}">Libra Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:LibraZodiacRetailDetails' %}">Libra Retail
+                                Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Scorpio" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Scorpio_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Scorpio Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:ScorpioZodiacOverview' %}">Scorpio Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:ScorpioBasicZodiacDetails' %}">Scorpio
+                                Basic Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:ScorpioHoroscopeDetails' %}">Scorpio Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacCareerDetails' %}">Scorpio
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:ScorpioZodiacHealthDetails' %}">Scorpio Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacLoveDetails' %}">Scorpio Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:ScorpioZodiacMoneyDetail' %}">Scorpio Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacRetailDetails' %}">Scorpio
+                                Retail Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Sagittarius" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Sagittarius_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Sagittarius Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusZodiacOverview' %}">Sagittarius Overview
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusBasicZodiacDetails' %}">Sagittarius Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusHoroscopeDetails' %}">Sagittarius Horoscope
+                                Details</a>
+                            <a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusZodiacCareerDetails' %}">Sagittarius Career
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusZodiacHealthDetails' %}">Sagittarius Health
+                                Details</a>
+                            <a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">Sagittarius Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusZodiacMoneyDetail' %}">Sagittarius Money
+                                Details</a>
+                            <a class="link-item"
+                                href="{% url 'MyZodiacSigns:SagittariusZodiacRetailDetails' %}">Sagittarius Retail
+                                Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Capricorn" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Capricorn_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Capricorn Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CapricornZodiacOverview' %}">Capricorn Overview
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CapricornBasicZodiacDetails' %}">Capricorn Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CapricornHoroscopeDetails' %}">Capricorn Horoscope
+                                Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CapricornZodiacCareerDetails' %}">Capricorn
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CapricornZodiacHealthDetails' %}">Capricorn Health
+                                Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CapricornZodiacLoveDetails' %}">Capricorn
+                                Love Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:CapricornZodiacMoneyDetail' %}">Capricorn Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CapricornZodiacRetailDetails' %}">Capricorn
+                                Retail Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Aquarius" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Aquarius_Zodiac.jpg">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Aquarius Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusZodiacOverview' %}">Aquarius Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:AquariusBasicZodiacDetails' %}">Aquarius
+                                Basic Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusHoroscopeDetails' %}">Aquarius Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacCareerDetails' %}">Aquarius
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusZodiacHealthDetails' %}">Aquarius Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">Aquarius
+                                Love Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:AquariusZodiacMoneyDetail' %}">Aquarius Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:AquariusZodiacRetailDetails' %}">Aquarius
+                                Retail Details</a></span>
+                        {% elif ZodiacFindingDetails.Zodiac_Sign == "Pisces" %}
+                        <img class='d-block w-100' src="/media/Zodiac_carousels/Pisces_Zodiac.png">
+                        <h4 class="LinkCaptionSty LinkCaptionHeadingSty">You can check more details about Pisces Zodiac Sign</h4>
+                        <span class="LinkDetails"><a class="link-item"
+                                href="{% url 'MyZodiacSigns:PiscesZodiacOverview' %}">Pisces Overview Details</a><a
+                                class="link-item" href="{% url 'MyZodiacSigns:PiscesBasicZodiacDetails' %}">Pisces Basic
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:PiscesHoroscopeDetails' %}">Pisces Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacCareerDetails' %}">Pisces
+                                Career Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:PiscesZodiacHealthDetails' %}">Pisces Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">Pisces Love
+                                Details</a><a class="link-item"
+                                href="{% url 'MyZodiacSigns:PiscesZodiacMoneyDetail' %}">Pisces Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:PiscesZodiacRetailDetails' %}">Pisces
+                                Retail Details</a></span>
+                        {% else %}
+                        <p>Sorry! Mr/Mrs {{ZodiacFindingDetails.Person_Name}}</p>
+                        <p>According to our Intel we can't find any zodiac sign for you.</p>
+                        <p>Could you please check again and try again with correct details!</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    {% endblock %}

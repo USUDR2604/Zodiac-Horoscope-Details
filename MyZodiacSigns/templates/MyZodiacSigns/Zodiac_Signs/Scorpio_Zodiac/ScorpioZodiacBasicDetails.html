@@ -1,0 +1,224 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Scorpio Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Scorpio_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Scorpio Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#AssociationDetails">Associations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:ScorpioZodiacOverview' %}">{{Scorpio_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Scorpio Sign</h4>
+                <p>Scorpio (♏︎) is the eighth astrological sign in the zodiac, originating from the constellation of
+                    Scorpius. It spans 210°–240° ecliptic longitude. Under the tropical zodiac (most commonly used in
+                    Western astrology), the Sun transits this sign on average from October 23 to November 22.Under the
+                    sidereal zodiac ,the Sun transits Scorpio from approximately November 16 to December 15.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Scorpio Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacOverview' %}">Scorpio Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:ScorpioBasicZodiacDetails' %}">Scorpio Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioHoroscopeDetails' %}">Scorpio Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacCareerDetails' %}">Scorpio Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacHealthDetails' %}">Scorpio Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacLoveDetails' %}">Scorpio Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacMoneyDetail' %}">Scorpio Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacRetailDetails' %}">Scorpio Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="AssociationDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Scorpio Sign</h4>
+                <p>Scorpio is one of the water signs, the others being Cancer and Pisces. It is a fixed, negative
+                    sign. Scorpio is associated with three different animals: the scorpion, the snake, and the eagle.
+                    According to The Astrology Bible, Scorpio's colors are deep red, maroon, black, and brown.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Scorpio Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacOverview' %}">Scorpio Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:ScorpioBasicZodiacDetails' %}">Scorpio Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioHoroscopeDetails' %}">Scorpio Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacCareerDetails' %}">Scorpio Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacHealthDetails' %}">Scorpio Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacLoveDetails' %}">Scorpio Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacMoneyDetail' %}">Scorpio Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacRetailDetails' %}">Scorpio Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Scorpio Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Scorpion</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>October 23 – November 22 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Scorpius</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Water</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Fixed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td> Mars and Pluto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Venus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>Uranus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Moon</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Scorpio Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacOverview' %}">Scorpio Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:ScorpioBasicZodiacDetails' %}">Scorpio Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioHoroscopeDetails' %}">Scorpio Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacCareerDetails' %}">Scorpio Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacHealthDetails' %}">Scorpio Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacLoveDetails' %}">Scorpio Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:ScorpioZodiacMoneyDetail' %}">Scorpio Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacRetailDetails' %}">Scorpio Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Scorpio.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Scorpio Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;October 23 – November 22</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Scorpio Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:ScorpioZodiacOverview' %}">Scorpio Overview
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:ScorpioBasicZodiacDetails' %}">Scorpio Basic
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:ScorpioHoroscopeDetails' %}">Scorpio Horoscope
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacCareerDetails' %}">Scorpio
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:ScorpioZodiacHealthDetails' %}">Scorpio Health
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacLoveDetails' %}">Scorpio
+                                    Love Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:ScorpioZodiacMoneyDetail' %}">Scorpio Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:ScorpioZodiacRetailDetails' %}">Scorpio
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

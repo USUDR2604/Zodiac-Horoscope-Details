@@ -1,0 +1,44 @@
+.para-sty {
+    text-align: justify;
+}
+
+.heading-sty {
+    font-style: italic;
+}
+
+.Zodiac_Overview {
+    height: 22.5rem !important;
+}
+
+.image-carousel-sty {
+    width: 100%;
+}
+
+.Image-container {
+    position: relative;
+}
+
+.Detail-Caption-Sty {
+    padding: 0.3rem;
+    color: black;
+    font-style: italic;
+}
+
+.iblock-sty {
+    width: 20rem;
+}
+
+.Image-Container {
+    position: relative;
+    width: 100%;
+}
+
+.Img-Details, .Image-Content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.LoveSmallSymbolSty {
+    width: 2.2rem;
+}

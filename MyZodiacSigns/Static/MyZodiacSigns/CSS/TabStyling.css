@@ -1,0 +1,113 @@
+body {
+  background: #a3d7dc;
+  font-size: 16px;
+}
+
+.nav-pills .nav-link {
+  font-weight: bold;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  background: #70848f;
+  color: #fff;
+  border-radius: 0.95rem;
+  border: 0.1rem solid #70848f;
+  margin: 0.06rem;
+}
+
+.nav-pills .nav-link.active {
+  background: #355c7d;
+  color: white;
+  font-weight: 800;
+}
+
+.tab-content {
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  overflow-y: scroll;
+  background: #f88195;
+  color: white;
+  border-radius: 1.75rem 0.25rem 0.25rem 1rem;
+  z-index: 666;
+  box-shadow: 0px 0.625rem 0.625rem rgba(0, 0, 0, 0.4);
+  padding: 1.45rem;
+}
+
+.Detail-Caption-Sty {
+  color: white;
+}
+
+.tab-content p, .tab-content h4 {
+  color: white;
+}
+
+.Zodiac-Basic-Content {
+  height: 22.5rem;
+}
+
+.image-logo-sty {
+  width: 16rem;
+  border-radius: 2rem;
+}
+
+.img-tab-sty {
+  width: 1.4rem;
+  padding: 0.08em;
+  margin: 0.225rem;
+  border-radius: 10%;
+  height: 1.2rem;
+}
+
+.Zodiac-Heading {
+  font-style: italic;
+  font-weight: 500;
+  color: white;
+}
+
+.heading-sty {
+  font: size 700px !important;
+}
+
+.link-item {
+  padding: 0.42rem 0.7rem;
+  color: white;
+  background-color: #c06c84;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.LinkDetails a {
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+.link-item:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.Content-Description-Sty {
+  text-align: justify;
+}
+
+.LinkContainerDetailSty {
+  height: 100%;
+  padding: 0.45rem 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .img-tab-sty {
+    width: 2.05rem;
+    height: 1.8rem;
+    border-radius: 10%;
+  }
+
+  .LinkDetails a {
+    margin: 0.18rem;
+  }
+}
+
+.Overall-Content {
+  margin-top: 2.1rem;
+}

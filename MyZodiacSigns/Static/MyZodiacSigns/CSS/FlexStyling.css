@@ -1,0 +1,51 @@
+.FormContentStyling {
+  background-color: aqua;
+  padding: 1.2rem 1rem;
+}
+
+.box-caption {
+  position: absolute;
+  max-width: 400px;
+  background-color: rgb(0, 0, 0, 0.02);
+}
+
+.img-block-sty {
+  width: 300px !important;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  margin: 0.75rem;
+}
+
+.img-block-sty:hover {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+.Image-Container-Styling {
+  width: 100%;
+}
+
+.LoveSymbolSty {
+  width: 120px;
+}
+
+.FormContentStyling {
+  padding: 1rem 1.2rem;
+  background-color: rgb(0, 0, 0, 0.12);
+  border-radius: 0.5rem;
+}
+
+.star-checked {
+  color: orange;
+}
+
+.Star-Rating-Content {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.Zodiac-Content {
+  margin-top: 0.5rem;
+  background-color: #bfbfbf;
+  padding: 2rem 1.75rem;
+}

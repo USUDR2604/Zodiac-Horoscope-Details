@@ -1,0 +1,223 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Zodiac Love Details{% endblock title %}
+{% block content %}
+<div class="HoroscopeDetailStyling">
+    <div id="zodiacCarouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {% for zodiac in Zodiac_carousel_Images %}
+            <div class="carousel-item {% if forloop.first %} active {% endif %}">
+                <img class="d-block w-100 isty" src="{{zodiac.Image_url}}" alt="Zodiac-Sign +zodiac[Zodiac_Sign]" />
+                <div class="image-text-block">
+                    <p class='block-text'><a href="#ZodiacContent" class='block-asty btn btn-primary'><i
+                                class="fa-solid fa-chart-simple"></i>&nbsp;{{zodiac.Sign}} Love Details</i></a></p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#zodiacCarouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#zodiacCarouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span> 
+        </a>
+    </div>
+    <div id="ZodiacContent" class="container display-content">
+        <div class="Zodiac-Heading">My Zodiac Love</div>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Aries.jpg" alt="Aries Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Aries</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:AriesZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/taurus.jpg" alt="Taurus Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Taurus</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/gemini.jpg" alt="Gemini Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Gemini</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Cancer.jpg" alt="Cancer Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Cancer</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/leo.jpg" alt="Leo Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Leo</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:LeoZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Virgo.jpg" alt="Virgo Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Virgo</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:VirgoZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Libra.jpg" alt="Libra Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Libra</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:LibraZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Scorpio.jpg" alt="Scorpio Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Scorpio</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:ScorpioZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Saggitarius.jpg" alt="Saggatarius Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Sagittarius</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:SagittariusZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Capricorn.jpg" alt="Capricorn Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Capricorn</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:CapricornZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Aquarius.jpg" alt="Aquarius Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Aquarius</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:AquariusZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="card Zodiac-Card">
+                    <div class="img-card text-center">
+                        <img class="img-card-top" src="/media/Astro_signs/Pisces.jpg" alt="Pisces Zodiac" />
+                    </div>
+                    <div class="Card-Content text-center m-2">
+                        <div class="card-title-sty">Aries</div>
+                        <div class="wrap-sty">
+                            <a class="asty" href="{% url 'MyZodiacSigns:PiscesZodiacLoveDetails' %}">
+                                Explore <span class="arrow"></span><span class="sarrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="LinkContainerDetailSty">
+        <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+        <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+            <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">
+                Overall Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health
+                Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a
+                class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+    </div>
+</div>
+{% endblock %}

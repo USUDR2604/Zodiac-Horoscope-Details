@@ -1,0 +1,196 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Cancer Love Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Cancer_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacLoveContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Cancer Love Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacLoveContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#YesterdayLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Yesterday_Details.png" /><span
+                    class="info-sty d-none d-md-inline-block">YESTERDAY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#TodayLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Today_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">TODAY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#TomorrowLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Tomorrow_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">TOMORROW</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#WeeklySingleLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Weekly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">WEEK (SINGLE)</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#WeeklyCoupleLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Weekly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">WEEK (COUPLE)</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MonthlySingleLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Monthly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">MONTH (SINGLE)</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#MonthlyCoupleLove"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Monthly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">MONTH (COUPLE)</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Yearly_Horoscopes.png" /><span
+                    class="info-sty d-none d-md-inline-block">{{CancerLoveDetails.Year}}</span></span></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="YesterdayLove" class='container tab-pane active'>
+                <h4 class="Detail-Caption-Sty">Cancer Yesterday Love Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{CancerLoveDetails.Yesterday_Date}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Yesterday_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="TodayLove" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Cancer Today Love Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{CancerLoveDetails.Present_Date}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Today_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="TomorrowLove" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Cancer Tomorrow Love Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{CancerLoveDetails.Tomorrow_Date}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Tomorrow_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="WeeklySingleLove" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Cancer Weekly Single Love Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span
+                            class="strong-text">{{CancerLoveDetails.start_week_date}}&nbsp;-&nbsp;{{CancerLoveDetails.end_week_date}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Weekly_Single_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="WeeklyCoupleLove" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Cancer Weekly Couple Love Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span
+                            class="strong-text">{{CancerLoveDetails.start_week_date}}&nbsp;-&nbsp;{{CancerLoveDetails.end_week_date}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Weekly_Couple_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="MonthlySingleLove" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Cancer Monthly Single Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{CancerLoveDetails.Month_Details}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Monthly_Single_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="MonthlyCoupleLove" class='container tab-pane fade'>
+                <h4 class="Detail-Caption-Sty">Cancer Monthly Couple Love Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{CancerLoveDetails.Month_Details}}</span>&nbsp;-&nbsp;<span
+                            class='desc-sty'>{{CancerLoveDetails.Monthly_Couple_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

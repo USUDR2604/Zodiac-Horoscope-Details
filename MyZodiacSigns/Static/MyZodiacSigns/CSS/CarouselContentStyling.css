@@ -1,0 +1,65 @@
+body {
+    font-size: 16px;
+}
+
+.Total-content {
+    margin: 0.6rem 0 0.6rem 0;
+}
+
+.carousel-content-box {
+    background-color: #b3b3b3;
+    padding: 0.45rem 0.6rem;
+    height: 13rem;
+}
+
+.weekly-content-box {
+    height: 10.4rem !important;
+}
+
+.weekly-content-description {
+    height: 7rem !important;
+}
+
+.monthly-content-box {
+    height: 11rem !important;
+}
+
+.monthly-content-description {
+    height: 7.6rem !important;
+}
+
+.carousel-content-description {
+    height: 9.6rem;
+    overflow-y: scroll;
+}
+
+.btn-content {
+    height: 3.4rem;
+    padding: 0.25rem 0.3rem;
+    background-color: rgb(0, 0, 0, 0.14);
+}
+
+.strong-text {
+    font-weight: 700;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border: 0.125rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

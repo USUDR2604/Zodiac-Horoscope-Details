@@ -1,0 +1,49 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Gemini Money Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Gemini_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacMoneyContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Gemini Money Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacMoneyContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#WeeklyMoneyDetails"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Weekly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">WEEKLY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Yearly_Horoscopes.png" /><span
+                    class="info-sty d-none d-md-inline-block">{{GeminiMoneyDetails.Year}}</span></span></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="WeeklyMoneyDetails" class='container tab-pane active'>
+                <h4 class="Detail-Caption-Sty">Gemini Weekly Money Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{GeminiMoneyDetails.start_week_date}}&nbsp;-&nbsp;{{GeminiMoneyDetails.end_week_date}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{GeminiMoneyDetails.Weekly_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Gemini Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacOverview' %}">Gemini Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:GeminiBasicZodiacDetails' %}">Gemini Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:GeminiHoroscopeDetails' %}">Gemini Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacCareerDetails' %}">Gemini Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacHealthDetails' %}">Gemini Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacLoveDetails' %}">Gemini Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacMoneyDetail' %}">Gemini Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:GeminiZodiacRetailDetails' %}">Gemini Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

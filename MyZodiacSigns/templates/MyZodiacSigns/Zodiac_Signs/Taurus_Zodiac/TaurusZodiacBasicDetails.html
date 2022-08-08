@@ -1,0 +1,223 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Taurus Basic Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Taurus_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacBasicContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Taurus Basic Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacBasicContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#BasicDetails">Basic Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#HistoryDetails">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#OverallDetails">Overall</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ExploreDetails">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">{{Taurus_Details.Year}}</a>
+            </li>
+        </ul>
+        <!--TAB CONTENT-->
+        <div class="tab-content">
+            <div id="BasicDetails" class='container tab-pane active'>
+                <h4 class='Zodiac-Heading'>Taurus Sign</h4>
+                <p>Taurus (♉︎) is the second astrological sign in the modern zodiac. It spans from 30° to 60° of the
+                    zodiac. This sign belongs to the Earth element or triplicity, and has a feminine or negative
+                    polarity, as well as a fixed modality, quality, or quadruplicity. It is a Venus-ruled sign along
+                    with Libra. The Moon is in its exaltation here at exactly 3°. The Sun transits this sign from
+                    approximately April 21 until May 20 in western astrology.</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="HistoryDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Taurus Sign</h4>
+                <p>The sign of Taurus is associated with several myths and bull worship from several ancient cultures.
+                    It was the first sign of the zodiac established among the Mesopotamians, who called it "The Great
+                    Bull of Heaven," as it was the constellation through which the Sun rose on the vernal equinox at
+                    that time, that is the Early Bronze Age, from about 4000 BC to 1700 BC</p>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="OverallDetails" class='container tab-pane fade'>
+                <h4 class='Zodiac-Heading'>Taurus Sign</h4>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Zodiac symbol</th>
+                            <td>Ram</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration (tropical, western)</th>
+                            <td>April 20 – May 21 (2022, UT1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Constellation</th>
+                            <td> Taurus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac element</th>
+                            <td> Earth</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zodiac quality</th>
+                            <td>Fixed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sign ruler</th>
+                            <td>Venus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Detriment</th>
+                            <td>Traditional: Mars Modern: Pluto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exaltation</th>
+                            <td>Moon</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fall</th>
+                            <td>Traditional: No planet is fall or depressed here; Modern: Uranus</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus Basic
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus Love
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus Retail
+                            Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item"
+                            href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                            class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                            Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                            Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+            <div id="ExploreDetails" class='container tab-pane fade'>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <img class="image-logo-sty" src="/media/Zodiacs/Taurus.jpg">
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <h4 class="Zodiac-Sign-Heading">Taurus Sign</h4>
+                        <p class='zodiac-date-sty'><span>Birth date:</span>&nbsp;April 20 – May 21</p>
+                        <div class="LinkContainerDetailSty">
+                            <h4 class="LinkCaptionSty">More details about Taurus Zodiac Sign</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:TaurusZodiacOverview' %}">Taurus Overview Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:TaurusBasicZodiacDetails' %}">Taurus
+                                    Basic Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:TaurusHoroscopeDetails' %}">Taurus Horoscope Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacCareerDetails' %}">Taurus
+                                    Career Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:TaurusZodiacHealthDetails' %}">Taurus Health Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacLoveDetails' %}">Taurus
+                                    Love Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:TaurusZodiacMoneyDetail' %}">Taurus Money Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:TaurusZodiacRetailDetails' %}">Taurus
+                                    Retail Details</a></span>
+                            <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                            <span class="LinkDetails"><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a
+                                    class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love
+                                    Details</a>
+                                <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money
+                                    Details</a><a class="link-item"
+                                    href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail
+                                    Details</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

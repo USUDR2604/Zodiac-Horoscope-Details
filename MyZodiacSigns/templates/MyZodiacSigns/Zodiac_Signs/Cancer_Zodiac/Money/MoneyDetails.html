@@ -1,0 +1,49 @@
+{% extends 'MyZodiacSigns/Navbar.html' %}
+{% load static %}
+
+{% block title %}Cancer Money Details{% endblock title %}
+{% block content %}
+<div class="Image-container">
+    <img class='image-carousel-sty' src="/media/Zodiac_carousels/Cancer_Zodiac.png" />
+    <div class="image-text-block">
+        <p class='block-text'><a href="#ZodiacMoneyContent" class='block-asty btn btn-primary'>
+                <i class="fa-solid fa-chart-simple"></i>&nbsp;Cancer Money Details</i></a></p>
+    </div>
+</div>
+<div class="Total-content" id="ZodiacMoneyContent">
+    <div class="container">
+        <!-- NAV PILLS-->
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#WeeklyMoneyDetails"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Weekly_Symbol.png" /><span
+                    class="info-sty d-none d-md-inline-block">WEEKLY</span></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}"><span><img class="img-tab-sty" src="/media/Horoscope_Types/Yearly_Horoscopes.png" /><span
+                    class="info-sty d-none d-md-inline-block">{{CancerMoneyDetails.Year}}</span></span></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="WeeklyMoneyDetails" class='container tab-pane active'>
+                <h4 class="Detail-Caption-Sty">Cancer Weekly Money Details</h4>
+                <div class='Content-Description-Sty'>
+                    <p><span class="strong-text">{{CancerMoneyDetails.start_week_date}}&nbsp;-&nbsp;{{CancerMoneyDetails.end_week_date}}</span>&nbsp;-&nbsp;<span class='desc-sty'>{{CancerMoneyDetails.Weekly_Description}}</span></p>
+                </div>
+                <div class="LinkContainerDetailSty">
+                    <h4 class="LinkCaptionSty">More details about Cancer Zodiac Sign</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacOverview' %}">Cancer Overview Details</a><a class="link-item"
+                            href="{% url 'MyZodiacSigns:CancerBasicZodiacDetails' %}">Cancer Basic Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerHoroscopeDetails' %}">Cancer Horoscope Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacCareerDetails' %}">Cancer Career Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacHealthDetails' %}">Cancer Health Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacLoveDetails' %}">Cancer Love Details</a><a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacMoneyDetail' %}">Cancer Money Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:CancerZodiacRetailDetails' %}">Cancer Retail Details</a></span>
+                    <h4 class="LinkCaptionSty">More details about All Zodiac Signs</h4>
+                    <span class="LinkDetails"><a class="link-item" href="{% url 'MyZodiacSigns:OverallZodiacOverviewDetails' %}">Overall view Details</a>
+                        <a class="link-item" href="{% url 'MyZodiacSigns:HomePage' %}">Overall Horoscope Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacCareerDetails' %}">Overall Career
+                            Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacHealthDetails' %}">Overall Health Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacLoveDetails' %}">Overall Love Details</a>
+                            <a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacMoneyDetails' %}">Overall Money Details</a><a class="link-item" href="{% url 'MyZodiacSigns:MyZodiacRetailDetails' %}">Overall Retail Details</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
